@@ -1,0 +1,36 @@
+/* Estilo para todos os botões */
+.button, .reset-button {
+    background-color: #ff5733; /* Cor de fundo padrão laranja */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Efeitos ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.button:hover, .reset-button:hover {
+    background-color: #c0392b; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+/* Estilo específico para o botão de reiniciar o jogo */
+.reset-button {
+    background-color: #3498db; /* Cor diferente para o botão de reiniciar */
+}
+
+.reset-button:hover {
+    background-color: #2980b9; /* Cor ao passar o mouse no botão de reiniciar */
+}
+
+/* Estilo para os botões Comprar Carta e Parar */
+.action-button {
+    background-color: #e67e22; /* Cor diferente para as ações de jogo */
+}
+
+.action-button:hover {
+    background-color: #d35400; /* Cor ao passar o mouse para as ações de jogo */
+}

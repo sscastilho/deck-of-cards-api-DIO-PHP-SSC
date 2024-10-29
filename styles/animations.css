@@ -1,0 +1,52 @@
+/* Estilo para animações de transição */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Aplicar animação de fade-in ao corpo da página */
+body {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Estilo para as cartas ao serem desenhadas */
+.card {
+    opacity: 0; /* Inicia invisível */
+    animation: fadeIn 0.5s forwards; /* Aplica a animação de fade-in */
+    transition: transform 0.2s ease-in-out; /* Efeito de transformação ao passar o mouse */
+}
+
+/* Estilo de entrada para o histórico de vencedores */
+ul {
+    animation: slideIn 0.5s ease-in-out; /* Animação de deslizamento para a lista */
+}
+
+/* Efeito de destaque para mensagens de vitória */
+.winner-message {
+    animation: fadeIn 1s ease-in;
+    color: gold; /* Dourado para o texto do vencedor */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para dar destaque */
+}
+
+/* Animação para os botões */
+.button, .reset-button {
+    transition: transform 0.2s, background-color 0.3s; /* Transições para botões */
+}
+
+/* Efeito de clique no botão */
+.button:active, .reset-button:active {
+    transform: scale(0.95); /* Levemente diminui o botão ao clicar */
+}

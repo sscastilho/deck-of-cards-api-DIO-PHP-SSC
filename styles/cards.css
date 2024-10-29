@@ -1,0 +1,17 @@
+/* Estilo para as cartas */
+.card {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 140px; /* Ajuste a altura conforme necessário */
+    border: 1px solid #fff; /* Borda branca ao redor das cartas */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 5px; /* Espaço entre as cartas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra das cartas */
+    transition: transform 0.2s; /* Efeito ao passar o mouse */
+    object-fit: cover; /* Para garantir que a imagem se ajuste ao tamanho */
+}
+
+/* Efeito ao passar o mouse sobre as cartas */
+.card:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+    z-index: 1; /* Coloca a carta acima das demais */
+}

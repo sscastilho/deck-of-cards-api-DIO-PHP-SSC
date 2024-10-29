@@ -1,0 +1,116 @@
+/* Estilos gerais do corpo */
+body {
+    background-image: url('https://1.bp.blogspot.com/-GZOvuEToD54/UmJj7fHQNBI/AAAAAAAACV4/tO6RhKRXuS0/s1600/Coolidge+-+A+Bold+Bluff+web.jpg'); /* Imagem de fundo de cassino */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do jogo */
+.game-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Estilos do título */
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+}
+
+/* Indicador de vez do jogador */
+.turn-indicator {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+/* Container dos jogadores */
+.players-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Moldura do jogador */
+.player-frame {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ff5733;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.7);
+    text-align: center;
+}
+
+/* Estilos dos subtítulos e mensagens */
+h2, h3 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos das cartas */
+.card {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+/* Container para o histórico */
+.history {
+    margin-top: 20px;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilo para a lista de resultados */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo dos botões */
+.button, .reset-button {
+    background-color: #ff5733; /* Cor de fundo padrão laranja */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s; /* Efeitos ao passar o mouse */
+}
+
+.button:hover, .reset-button:hover {
+    background-color: #c0392b; /* Cor ao passar o mouse */
+}
+
+/* Anúncio do vencedor */
+.winner-announcement {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f39c12;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
