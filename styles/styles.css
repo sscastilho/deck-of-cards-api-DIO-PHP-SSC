@@ -114,3 +114,23 @@ ul {
     color: #f39c12;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Rodapé*/
+.license-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparente */
+    color: white; /* Fonte branca */
+    padding: 10px; /* Espaçamento interno reduzido */
+    border: 2px solid #ff5733; /* Borda na cor laranja dos botões */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Sombra laranja */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para posicionamento */
+    bottom: 0; /* Alinha na parte inferior */
+    width: 50%; /* Ocupa 50% da largura da página */
+    margin: 20px auto; /* Centraliza o quadro na página */
+    font-size: 0.9em; /* Tamanho da fonte menor */
+}
+
+body {
+    margin: 0; /* Remove margens do body */
+    padding-bottom: 60px; /* Para evitar que o conteúdo fique em cima do quadro */
+}

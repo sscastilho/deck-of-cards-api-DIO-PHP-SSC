@@ -103,6 +103,22 @@ if ($_SESSION['game_over']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Jogo 21</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o rodapé fique no final da página */
+        }
+        .game-container {
+            flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+        }
+        footer {
+            text-align: center;
+            color: orange;
+            margin-top: 20px;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="game-container">
@@ -179,6 +195,16 @@ if ($_SESSION['game_over']) {
             <button type="submit" name="reset_history" class="reset-button">Zerar Histórico</button>
         </form>
     </div>
+
+    <footer>
+    <div class="license-container">
+        Este projeto está licenciado sob a Licença MIT. A cópia, modificação ou venda deste software sem a autorização prévia do autor não é permitida.
+        <p>Desenvolvido por: Sullivan Santos Castilho</p>
+    </div>
+
+    </footer>
 </body>
 </html>
+
+
 <!--perfeito até aqui
